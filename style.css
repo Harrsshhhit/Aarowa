@@ -72,6 +72,11 @@ body {
   background: linear-gradient(225deg, #ee0a67 0%, #fea1be 50%, #fea1be 100%);
 }
 
+.phoolmati {
+  border-radius: 3px;
+  background: linear-gradient(225deg, #ee0a67 0%, #fea1be 50%, #fea1be 100%);
+}
+
 .swiper {
   position: relative;
   width: 250px;
