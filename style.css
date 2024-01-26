@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 *,
 *::after,
 *::before {
@@ -31,7 +31,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   gap: 30px;
   background: linear-gradient(
     180deg,
@@ -41,13 +41,16 @@ body {
   backdrop-filter: blur(30px);
   border-radius: 20px;
   width: min(900px, 100%);
-  box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.66) inset,
+    0 4px 16px rgba(0, 0, 0, 0.12);
   z-index: 10;
 }
 
 .info {
-  display:flex;
-  font-family: 'Poppins', sans-serif;
+  display: flex;
+  font-family: "Poppins", sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -56,7 +59,7 @@ body {
   text-align: justify;
 }
 
-.info p{
+.info p {
   color: #fff;
   font-weight: 500;
   font-size: 1rem;
@@ -64,16 +67,16 @@ body {
   line-height: 1.5;
 }
 
-.movies {
+.hbd {
   border-radius: 3px;
   background: linear-gradient(225deg, #ee0a67 0%, #fea1be 50%, #fea1be 100%);
 }
 
 .swiper {
-    position: relative;
-    width: 250px;
-    height: 450px;
-    padding: 50px 0;
+  position: relative;
+  width: 250px;
+  height: 450px;
+  padding: 50px 0;
 }
 
 .swiper-slide {
@@ -82,13 +85,13 @@ body {
   border-radius: 18px;
 }
 
-.swiper-slide img{
+.swiper-slide img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.circles{
+.circles {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,26 +100,31 @@ body {
   overflow: hidden;
 }
 
-.circles li{
+.circles li {
   position: absolute;
   display: block;
   list-style: none;
   width: 20px;
   height: 20px;
   background-color: #ff3cac;
-  background-image: linear-gradient(225deg, #ee0a67 0%, #fea1be 50%, #fea1be 100%);
+  background-image: linear-gradient(
+    225deg,
+    #ee0a67 0%,
+    #fea1be 50%,
+    #fea1be 100%
+  );
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
 
-.circles li:nth-child(1){
+.circles li:nth-child(1) {
   left: 25%;
   width: 80px;
   height: 80px;
   animation-delay: 0s;
 }
 
-.circles li:nth-child(2){
+.circles li:nth-child(2) {
   left: 10%;
   width: 20px;
   height: 20px;
@@ -124,14 +132,14 @@ body {
   animation-duration: 12s;
 }
 
-.circles li:nth-child(3){
+.circles li:nth-child(3) {
   left: 70%;
   width: 20px;
   height: 20px;
   animation-delay: 4s;
 }
 
-.circles li:nth-child(4){
+.circles li:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
@@ -139,28 +147,28 @@ body {
   animation-duration: 18s;
 }
 
-.circles li:nth-child(5){
+.circles li:nth-child(5) {
   left: 65%;
   width: 20px;
   height: 20px;
   animation-delay: 0s;
 }
 
-.circles li:nth-child(6){
+.circles li:nth-child(6) {
   left: 75%;
   width: 110px;
   height: 110px;
   animation-delay: 3s;
 }
 
-.circles li:nth-child(7){
+.circles li:nth-child(7) {
   left: 35%;
   width: 150px;
   height: 150px;
   animation-delay: 7s;
 }
 
-.circles li:nth-child(8){
+.circles li:nth-child(8) {
   left: 50%;
   width: 25px;
   height: 25px;
@@ -168,7 +176,7 @@ body {
   animation-duration: 45s;
 }
 
-.circles li:nth-child(9){
+.circles li:nth-child(9) {
   left: 20%;
   width: 15px;
   height: 15px;
@@ -176,7 +184,7 @@ body {
   animation-duration: 35s;
 }
 
-.circles li:nth-child(10){
+.circles li:nth-child(10) {
   left: 85%;
   width: 150px;
   height: 150px;
@@ -185,17 +193,15 @@ body {
 }
 
 @keyframes animate {
-
-  0%{
+  0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
     border-radius: 0;
   }
 
-  100%{
+  100% {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
   }
-
 }
